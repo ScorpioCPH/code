@@ -1,0 +1,5 @@
+# Ignore binary directory
+bin/
+
+# Ignore Mac OS file
+.DS_Store
