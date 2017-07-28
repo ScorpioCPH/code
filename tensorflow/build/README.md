@@ -9,11 +9,25 @@ $ cd tensorflow
 $ ./configure
 ```
 
-**build pip package**
+**clean**
+
+```shell
+$ bazel clean
+```
+
+**build pip package (CPU)**
 
 ```shell
 $ bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package
 $ bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
+```
+
+Add `--config=cuda` with GPU support.
+
+And with `verbose_explanations` for more details:
+
+```shell
+$ bazel build --explain log.txt --verbose_explanations=true -s --config=opt //tensorflow/tools/pip_package:build_pip_package
 ```
 
 **install pip package**
