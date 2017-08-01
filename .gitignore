@@ -3,3 +3,5 @@ bin/
 
 # Ignore Mac OS file
 .DS_Store
+
+*_pool.jpg
