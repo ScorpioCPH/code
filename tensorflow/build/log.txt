@@ -1,0 +1,179 @@
+____Loading package: tensorflow/tools/pip_package
+____Loading package: @bazel_tools//tools/cpp
+____Loading package: @local_config_xcode//
+____Loading complete.  Analyzing...
+____Loading package: tensorflow/examples/tutorials/mnist
+____Loading package: @org_html5lib//
+____Loading package: tensorflow/core
+____Loading package: @png_archive//
+____Loading package: tensorflow/contrib/session_bundle
+____Loading package: @boringssl//
+____Loading package: tensorflow/contrib
+____Loading package: tensorflow/tools/tfprof/internal
+____Loading package: tensorflow/core/util/tensor_bundle
+____Loading package: @jsoncpp_git//
+____Loading package: tensorflow/core/platform/default/build_config
+____Loading package: tensorflow/core/util/ctc
+____Loading package: @pcre//
+____Loading package: tensorflow/contrib/data
+____Loading package: tensorflow/contrib/ffmpeg
+____Loading package: tensorflow/contrib/linalg
+____Loading package: tensorflow/contrib/solvers
+____Loading package: tensorflow/contrib/layers/kernels
+____Loading package: tensorflow/tensorboard/plugins
+WARNING: /Users/cenph/code/workspace/src/github.com/tensorflow/tensorflow/tensorflow/contrib/learn/BUILD:15:1: in py_library rule //tensorflow/contrib/learn:learn: target '//tensorflow/contrib/learn:learn' depends on deprecated target '//tensorflow/contrib/session_bundle:exporter': Use SavedModel Builder instead..
+WARNING: /Users/cenph/code/workspace/src/github.com/tensorflow/tensorflow/tensorflow/contrib/learn/BUILD:15:1: in py_library rule //tensorflow/contrib/learn:learn: target '//tensorflow/contrib/learn:learn' depends on deprecated target '//tensorflow/contrib/session_bundle:gc': Use SavedModel instead..
+____Loading package: tensorflow/contrib/data/python/ops
+____Loading package: tensorflow/tensorboard/lib
+____Loading package: @three_js_orbitcontrols_js//file
+____Loading package: @paper_radio_group//
+____Loading package: @paper_input//
+____Loading package: @es6_promise//
+____Loading package: @iron_icons//
+____Loading package: @plottable//
+____Found 1 target...
+____Building...
+____Writing explanation of rebuilds to 'log.txt'
+____[0 / 1] BazelWorkspaceStatusAction stable-status.txt
+____[2 / 10] Creating source manifest for @protobuf//:protoc [for host]
+>>>>>>>>> # @protobuf//:protoc [action 'Creating runfiles tree bazel-out/host/bin/external/protobuf/protoc.runfiles [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow/_bin/build-runfiles bazel-out/host/bin/external/protobuf/protoc.runfiles_manifest bazel-out/host/bin/external/protobuf/protoc.runfiles)
+____[3 / 262] Expanding template external/jpeg/jconfig_win.h [for host]
+>>>>>>>>> # @jpeg//:configure_internal [action 'Executing genrule @jpeg//:configure_internal [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  /bin/bash -c 'source external/bazel_tools/tools/genrule/genrule-setup.sh; cp bazel-out/host/genfiles/external/jpeg/jconfigint_nowin.h bazel-out/host/genfiles/external/jpeg/jconfigint.h')
+____[12 / 495] Executing genrule @jpeg//:configure [for host]
+>>>>>>>>> # @jpeg//:configure [action 'Executing genrule @jpeg//:configure [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  /bin/bash -c 'source external/bazel_tools/tools/genrule/genrule-setup.sh; cp bazel-out/host/genfiles/external/jpeg/jconfig_nowin_nosimd.h bazel-out/host/genfiles/external/jpeg/jconfig.h')
+>>>>>>>>> # @snappy//:snappy_stubs_public_h [action 'Executing genrule @snappy//:snappy_stubs_public_h [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  /bin/bash -c 'source external/bazel_tools/tools/genrule/genrule-setup.sh; sed -e '\''s/@ac_cv_have_stdint_h@/1/g'\'' -e '\''s/@ac_cv_have_stddef_h@/1/g'\'' -e '\''s/@ac_cv_have_stdint_h@/1/g'\'' -e '\''s/@ac_cv_have_sys_uio_h@/1/g'\'' -e '\''s/@SNAPPY_MAJOR@/1/g'\'' -e '\''s/@SNAPPY_MINOR@/1/g'\'' -e '\''s/@SNAPPY_PATCHLEVEL@/4/g'\'' external/snappy/snappy-stubs-public.h.in >bazel-out/host/genfiles/external/snappy/snappy-stubs-public.h')
+____[14 / 593] Expanding template tensorflow/python/tools/print_selective_registration_header
+>>>>>>>>> # //tensorflow/core:lib_hash_crc32c_accelerate_internal [action 'Compiling tensorflow/core/lib/hash/crc32c_accelerate.cc [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  external/local_config_cc/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -Wthread-safety -Wself-assign -fcolor-diagnostics -fno-omit-frame-pointer -g0 -O2 '-D_FORTIFY_SOURCE=1' -DNDEBUG -ffunction-sections -fdata-sections -g0 '-std=c++0x' -MD -MF bazel-out/host/bin/tensorflow/core/_objs/lib_hash_crc32c_accelerate_internal/tensorflow/core/lib/hash/crc32c_accelerate.d '-frandom-seed=bazel-out/host/bin/tensorflow/core/_objs/lib_hash_crc32c_accelerate_internal/tensorflow/core/lib/hash/crc32c_accelerate.o' -iquote . -iquote bazel-out/host/genfiles -iquote external/bazel_tools -iquote bazel-out/host/genfiles/external/bazel_tools -isystem external/bazel_tools/tools/cpp/gcc3 -DEIGEN_AVOID_STL_ARRAY -Iexternal/gemmlowp -Wno-sign-compare -fno-exceptions -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c tensorflow/core/lib/hash/crc32c_accelerate.cc -o bazel-out/host/bin/tensorflow/core/_objs/lib_hash_crc32c_accelerate_internal/tensorflow/core/lib/hash/crc32c_accelerate.o)
+>>>>>>>>> # @fft2d//:fft2d [action 'Compiling external/fft2d/fft/fftsg.c [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  external/local_config_cc/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -Wthread-safety -Wself-assign -fcolor-diagnostics -fno-omit-frame-pointer -g0 -O2 '-D_FORTIFY_SOURCE=1' -DNDEBUG -ffunction-sections -fdata-sections -g0 -MD -MF bazel-out/host/bin/external/fft2d/_objs/fft2d/external/fft2d/fft/fftsg.d -iquote external/fft2d -iquote bazel-out/host/genfiles/external/fft2d -iquote external/bazel_tools -iquote bazel-out/host/genfiles/external/bazel_tools -isystem external/bazel_tools/tools/cpp/gcc3 -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/fft2d/fft/fftsg.c -o bazel-out/host/bin/external/fft2d/_objs/fft2d/external/fft2d/fft/fftsg.o)
+>>>>>>>>> # @swig//:swigconfig [action 'Executing genrule @swig//:swigconfig [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  /bin/bash -c 'source external/bazel_tools/tools/genrule/genrule-setup.sh; cat <<EOF >bazel-out/host/genfiles/external/swig/Source/Include/swigconfig.h
+#define HAVE_BOOL
+#define HAVE_PCRE
+#define HAVE_POPEN
+#define PACKAGE_BUGREPORT "http://www.swig.org"
+#define PACKAGE_VERSION "3.0.8"
+#define STDC_HEADERS
+#define SWIG_CXX "bazel4lyfe"
+#define SWIG_LIB "external/swig/Lib"
+#define SWIG_LIB_WIN_UNIX ""
+#define SWIG_PLATFORM "bazel4lyfe"
+EOF')
+____[27 / 970] Creating source manifest for @swig//:swig [for host]
+>>>>>>>>> # @pcre//:pcre_h [action 'Executing genrule @pcre//:pcre_h [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  /bin/bash -c 'source external/bazel_tools/tools/genrule/genrule-setup.sh; sed -e s/@PCRE_MAJOR@/8/    -e s/@PCRE_MINOR@/39/    -e s/@PCRE_PRERELEASE@//    -e s/@PCRE_DATE@/redacted/    external/pcre/pcre.h.in >bazel-out/host/genfiles/external/pcre/pcre.h')
+____[28 / 999] Creating source manifest for //tensorflow/python:gen_sdca_ops_py_wrappers_cc [for host]
+>>>>>>>>> # //tensorflow/contrib/batching:gen_batch_ops_py_wrappers_cc [action 'Creating runfiles tree bazel-out/host/bin/tensorflow/contrib/batching/gen_batch_ops_py_wrappers_cc.runfiles [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow/_bin/build-runfiles bazel-out/host/bin/tensorflow/contrib/batching/gen_batch_ops_py_wrappers_cc.runfiles_manifest bazel-out/host/bin/tensorflow/contrib/batching/gen_batch_ops_py_wrappers_cc.runfiles)
+>>>>>>>>> # //tensorflow/python:gen_math_ops_py_wrappers_cc [action 'Creating runfiles tree bazel-out/host/bin/tensorflow/python/gen_math_ops_py_wrappers_cc.runfiles [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow/_bin/build-runfiles bazel-out/host/bin/tensorflow/python/gen_math_ops_py_wrappers_cc.runfiles_manifest bazel-out/host/bin/tensorflow/python/gen_math_ops_py_wrappers_cc.runfiles)
+____[30 / 1,641] Executing genrule @local_config_python//:numpy_include
+>>>>>>>>> # //tensorflow/core:version_info_gen [action 'Executing genrule //tensorflow/core:version_info_gen [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  /bin/bash -c 'source external/bazel_tools/tools/genrule/genrule-setup.sh; tensorflow/tools/git/gen_git_source.py --generate tensorflow/tools/git/gen/spec.json tensorflow/tools/git/gen/head tensorflow/tools/git/gen/branch_ref "bazel-out/host/genfiles/tensorflow/core/util/version_info.cc"')
+>>>>>>>>> # //tensorflow/python:gen_lookup_ops_py_wrappers_cc [action 'Creating runfiles tree bazel-out/host/bin/tensorflow/python/gen_lookup_ops_py_wrappers_cc.runfiles [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow/_bin/build-runfiles bazel-out/host/bin/tensorflow/python/gen_lookup_ops_py_wrappers_cc.runfiles_manifest bazel-out/host/bin/tensorflow/python/gen_lookup_ops_py_wrappers_cc.runfiles)
+____[31 / 1,704] Compiling external/grpc/src/core/lib/support/cpu_windows.c
+>>>>>>>>> # //tensorflow/tools/proto_text:gen_proto_text_functions [action 'Creating runfiles tree bazel-out/host/bin/tensorflow/tools/proto_text/gen_proto_text_functions.runfiles [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow/_bin/build-runfiles bazel-out/host/bin/tensorflow/tools/proto_text/gen_proto_text_functions.runfiles_manifest bazel-out/host/bin/tensorflow/tools/proto_text/gen_proto_text_functions.runfiles)
+____[31 / 1,704] Compiling external/grpc/src/core/lib/support/sync.c
+>>>>>>>>> # @snappy//:snappy [action 'Compiling external/snappy/snappy.cc [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  external/local_config_cc/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -Wthread-safety -Wself-assign -fcolor-diagnostics -fno-omit-frame-pointer -g0 -O2 '-D_FORTIFY_SOURCE=1' -DNDEBUG -ffunction-sections -fdata-sections -g0 '-std=c++0x' -MD -MF bazel-out/host/bin/external/snappy/_objs/snappy/external/snappy/snappy.d '-frandom-seed=bazel-out/host/bin/external/snappy/_objs/snappy/external/snappy/snappy.o' -iquote external/snappy -iquote bazel-out/host/genfiles/external/snappy -iquote external/bazel_tools -iquote bazel-out/host/genfiles/external/bazel_tools -isystem external/bazel_tools/tools/cpp/gcc3 -Wno-shift-negative-value -Wno-implicit-function-declaration -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/snappy/snappy.cc -o bazel-out/host/bin/external/snappy/_objs/snappy/external/snappy/snappy.o)
+>>>>>>>>> # @snappy//:snappy [action 'Compiling external/snappy/snappy-c.cc [for host]']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  external/local_config_cc/cc_wrapper.sh -U_FORTIFY_SOURCE -fstack-protector -Wall -Wthread-safety -Wself-assign -fcolor-diagnostics -fno-omit-frame-pointer -g0 -O2 '-D_FORTIFY_SOURCE=1' -DNDEBUG -ffunction-sections -fdata-sections -g0 '-std=c++0x' -MD -MF bazel-out/host/bin/external/snappy/_objs/snappy/external/snappy/snappy-c.d '-frandom-seed=bazel-out/host/bin/external/snappy/_objs/snappy/external/snappy/snappy-c.o' -iquote external/snappy -iquote bazel-out/host/genfiles/external/snappy -iquote external/bazel_tools -iquote bazel-out/host/genfiles/external/bazel_tools -isystem external/bazel_tools/tools/cpp/gcc3 -Wno-shift-negative-value -Wno-implicit-function-declaration -Wno-builtin-macro-redefined '-D__DATE__="redacted"' '-D__TIMESTAMP__="redacted"' '-D__TIME__="redacted"' -c external/snappy/snappy-c.cc -o bazel-out/host/bin/external/snappy/_objs/snappy/external/snappy/snappy-c.o)
+>>>>>>>>> # @local_config_python//:python_include [action 'Executing genrule @local_config_python//:python_include']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    PYTHON_BIN_PATH=/Users/cenph/anaconda/bin/python \
+    PYTHON_LIB_PATH=/Users/cenph/anaconda/lib/python2.7/site-packages \
+    TF_NEED_CUDA=0 \
+    TF_NEED_OPENCL=0 \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  /bin/bash -c 'source external/bazel_tools/tools/genrule/genrule-setup.sh; 
+ln -s /Users/cenph/anaconda/include/python2.7/Python-ast.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/Python-ast.h && ln -s /Users/cenph/anaconda/include/python2.7/Python.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/Python.h && ln -s /Users/cenph/anaconda/include/python2.7/abstract.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/abstract.h && ln -s /Users/cenph/anaconda/include/python2.7/asdl.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/asdl.h && ln -s /Users/cenph/anaconda/include/python2.7/ast.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/ast.h && ln -s /Users/cenph/anaconda/include/python2.7/bitset.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/bitset.h && ln -s /Users/cenph/anaconda/include/python2.7/boolobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/boolobject.h && ln -s /Users/cenph/anaconda/include/python2.7/bufferobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/bufferobject.h && ln -s /Users/cenph/anaconda/include/python2.7/bytearrayobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/bytearrayobject.h && ln -s /Users/cenph/anaconda/include/python2.7/bytes_methods.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/bytes_methods.h && ln -s /Users/cenph/anaconda/include/python2.7/bytesobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/bytesobject.h && ln -s /Users/cenph/anaconda/include/python2.7/cStringIO.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/cStringIO.h && ln -s /Users/cenph/anaconda/include/python2.7/cellobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/cellobject.h && ln -s /Users/cenph/anaconda/include/python2.7/ceval.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/ceval.h && ln -s /Users/cenph/anaconda/include/python2.7/classobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/classobject.h && ln -s /Users/cenph/anaconda/include/python2.7/cobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/cobject.h && ln -s /Users/cenph/anaconda/include/python2.7/code.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/code.h && ln -s /Users/cenph/anaconda/include/python2.7/codecs.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/codecs.h && ln -s /Users/cenph/anaconda/include/python2.7/compile.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/compile.h && ln -s /Users/cenph/anaconda/include/python2.7/complexobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/complexobject.h && ln -s /Users/cenph/anaconda/include/python2.7/datetime.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/datetime.h && ln -s /Users/cenph/anaconda/include/python2.7/descrobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/descrobject.h && ln -s /Users/cenph/anaconda/include/python2.7/dictobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/dictobject.h && ln -s /Users/cenph/anaconda/include/python2.7/dtoa.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/dtoa.h && ln -s /Users/cenph/anaconda/include/python2.7/enumobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/enumobject.h && ln -s /Users/cenph/anaconda/include/python2.7/errcode.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/errcode.h && ln -s /Users/cenph/anaconda/include/python2.7/eval.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/eval.h && ln -s /Users/cenph/anaconda/include/python2.7/fileobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/fileobject.h && ln -s /Users/cenph/anaconda/include/python2.7/floatobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/floatobject.h && ln -s /Users/cenph/anaconda/include/python2.7/frameobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/frameobject.h && ln -s /Users/cenph/anaconda/include/python2.7/funcobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/funcobject.h && ln -s /Users/cenph/anaconda/include/python2.7/genobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/genobject.h && ln -s /Users/cenph/anaconda/include/python2.7/graminit.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/graminit.h && ln -s /Users/cenph/anaconda/include/python2.7/grammar.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/grammar.h && ln -s /Users/cenph/anaconda/include/python2.7/greenlet/greenlet.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/greenlet/greenlet.h && ln -s /Users/cenph/anaconda/include/python2.7/import.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/import.h && ln -s /Users/cenph/anaconda/include/python2.7/intobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/intobject.h && ln -s /Users/cenph/anaconda/include/python2.7/intrcheck.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/intrcheck.h && ln -s /Users/cenph/anaconda/include/python2.7/iterobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/iterobject.h && ln -s /Users/cenph/anaconda/include/python2.7/listobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/listobject.h && ln -s /Users/cenph/anaconda/include/python2.7/longintrepr.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/longintrepr.h && ln -s /Users/cenph/anaconda/include/python2.7/longobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/longobject.h && ln -s /Users/cenph/anaconda/include/python2.7/marshal.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/marshal.h && ln -s /Users/cenph/anaconda/include/python2.7/memoryobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/memoryobject.h && ln -s /Users/cenph/anaconda/include/python2.7/metagrammar.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/metagrammar.h && ln -s /Users/cenph/anaconda/include/python2.7/methodobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/methodobject.h && ln -s /Users/cenph/anaconda/include/python2.7/modsupport.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/modsupport.h && ln -s /Users/cenph/anaconda/include/python2.7/moduleobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/moduleobject.h && ln -s /Users/cenph/anaconda/include/python2.7/node.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/node.h && ln -s /Users/cenph/anaconda/include/python2.7/object.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/object.h && ln -s /Users/cenph/anaconda/include/python2.7/objimpl.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/objimpl.h && ln -s /Users/cenph/anaconda/include/python2.7/opcode.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/opcode.h && ln -s /Users/cenph/anaconda/include/python2.7/osdefs.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/osdefs.h && ln -s /Users/cenph/anaconda/include/python2.7/parsetok.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/parsetok.h && ln -s /Users/cenph/anaconda/include/python2.7/patchlevel.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/patchlevel.h && ln -s /Users/cenph/anaconda/include/python2.7/pgen.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pgen.h && ln -s /Users/cenph/anaconda/include/python2.7/pgenheaders.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pgenheaders.h && ln -s /Users/cenph/anaconda/include/python2.7/py_curses.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/py_curses.h && ln -s /Users/cenph/anaconda/include/python2.7/pyarena.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pyarena.h && ln -s /Users/cenph/anaconda/include/python2.7/pycapsule.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pycapsule.h && ln -s /Users/cenph/anaconda/include/python2.7/pyconfig.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pyconfig.h && ln -s /Users/cenph/anaconda/include/python2.7/pyctype.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pyctype.h && ln -s /Users/cenph/anaconda/include/python2.7/pydebug.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pydebug.h && ln -s /Users/cenph/anaconda/include/python2.7/pyerrors.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pyerrors.h && ln -s /Users/cenph/anaconda/include/python2.7/pyexpat.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pyexpat.h && ln -s /Users/cenph/anaconda/include/python2.7/pyfpe.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pyfpe.h && ln -s /Users/cenph/anaconda/include/python2.7/pygetopt.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pygetopt.h && ln -s /Users/cenph/anaconda/include/python2.7/pymacconfig.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pymacconfig.h && ln -s /Users/cenph/anaconda/include/python2.7/pymactoolbox.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pymactoolbox.h && ln -s /Users/cenph/anaconda/include/python2.7/pymath.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pymath.h && ln -s /Users/cenph/anaconda/include/python2.7/pymem.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pymem.h && ln -s /Users/cenph/anaconda/include/python2.7/pyport.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pyport.h && ln -s /Users/cenph/anaconda/include/python2.7/pystate.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pystate.h && ln -s /Users/cenph/anaconda/include/python2.7/pystrcmp.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pystrcmp.h && ln -s /Users/cenph/anaconda/include/python2.7/pystrtod.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pystrtod.h && ln -s /Users/cenph/anaconda/include/python2.7/pythonrun.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pythonrun.h && ln -s /Users/cenph/anaconda/include/python2.7/pythread.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/pythread.h && ln -s /Users/cenph/anaconda/include/python2.7/rangeobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/rangeobject.h && ln -s /Users/cenph/anaconda/include/python2.7/setobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/setobject.h && ln -s /Users/cenph/anaconda/include/python2.7/sip.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/sip.h && ln -s /Users/cenph/anaconda/include/python2.7/sliceobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/sliceobject.h && ln -s /Users/cenph/anaconda/include/python2.7/stringobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/stringobject.h && ln -s /Users/cenph/anaconda/include/python2.7/structmember.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/structmember.h && ln -s /Users/cenph/anaconda/include/python2.7/structseq.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/structseq.h && ln -s /Users/cenph/anaconda/include/python2.7/symtable.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/symtable.h && ln -s /Users/cenph/anaconda/include/python2.7/sysmodule.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/sysmodule.h && ln -s /Users/cenph/anaconda/include/python2.7/timefuncs.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/timefuncs.h && ln -s /Users/cenph/anaconda/include/python2.7/token.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/token.h && ln -s /Users/cenph/anaconda/include/python2.7/traceback.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/traceback.h && ln -s /Users/cenph/anaconda/include/python2.7/tupleobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/tupleobject.h && ln -s /Users/cenph/anaconda/include/python2.7/ucnhash.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/ucnhash.h && ln -s /Users/cenph/anaconda/include/python2.7/unicodeobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/unicodeobject.h && ln -s /Users/cenph/anaconda/include/python2.7/warnings.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/warnings.h && ln -s /Users/cenph/anaconda/include/python2.7/weakrefobject.h bazel-out/local-opt/genfiles/external/local_config_python/python_include/weakrefobject.h    ')
+
+......
+
+>>>>>>>>> # //tensorflow/python:_pywrap_tensorflow_internal.so [action 'Linking tensorflow/python/_pywrap_tensorflow_internal.so']
+(cd /private/var/tmp/_bazel_cenph/0c66e8952efee15ec378fdd4d1d42b6a/execroot/tensorflow && \
+  exec env - \
+    PATH=/Users/cenph/anaconda/bin:/Users/cenph/miniconda2/bin:/Users/cenph/.nvm/versions/node/v4.4.7/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin \
+    PYTHON_BIN_PATH=/Users/cenph/anaconda/bin/python \
+    PYTHON_LIB_PATH=/Users/cenph/anaconda/lib/python2.7/site-packages \
+    TF_NEED_CUDA=0 \
+    TF_NEED_OPENCL=0 \
+    TMPDIR=/var/folders/hb/rbhp2nlx2yv4mp2g3v8qg2vr0000gn/T/ \
+  external/bazel_tools/tools/cpp/link_dynamic_library.sh
+
+......
+
+____From Linking tensorflow/python/_pywrap_tensorflow_internal.so:
+clang: warning: argument unused during compilation: '-pthread'
+Target //tensorflow/tools/pip_package:build_pip_package up-to-date:
+  bazel-bin/tensorflow/tools/pip_package/build_pip_package
+____Elapsed time: 4216.919s, Critical Path: 2648.06s
