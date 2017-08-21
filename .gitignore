@@ -5,3 +5,5 @@ bin/
 .DS_Store
 
 *_pool.jpg
+
+*.pyc
