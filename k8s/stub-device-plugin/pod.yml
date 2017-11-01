@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: stub-device-plugin
+  labels:
+    app: stub-device-plugin
+spec:
+  volumes:
+  - name: device-plugin-path
+    hostPath:
+      path: /var/lib/kubelet/device-plugins
+  - name: dummy-device-path
+    hostPath:
+      path: /tmp/dummy-device
+  containers:
+  - name: stub-device-plugin
+    image: cargo.caicloud.io/cenph/stub-device-plugin-amd64:1.0
+    # args: ["-resource_name", "dummy.com/device"]
+    volumeMounts:
+    - name: device-plugin-path
+      mountPath: /var/lib/kubelet/device-plugins
+    - name: dummy-device-path
+      mountPath: /tmp/dummy-device

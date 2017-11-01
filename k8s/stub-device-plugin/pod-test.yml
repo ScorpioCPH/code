@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: stub-device-plugin-test
+  labels:
+    app: stub-device-plugin-test
+spec:
+  restartPolicy: Always
+  containers:
+  - name: stub-device-plugin-test
+    image: busybox
+    command: ["sleep", "3000"]
+    resources:
+      requests:
+        dummy.device.com/device: 1
+      limits:
+        dummy.device.com/device: 1
+    securityContext:
+        privileged: true
