@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: tf-gpu-test
+  labels:
+    app: tf-gpu-test
+spec:
+  restartPolicy: Always
+  containers:
+  - name: tf-gpu-test
+    image: tensorflow/tensorflow:latest-gpu
+    # command: ["sleep", "3000"]
+    ports:
+      - containerPort: 8888
+    resources:
+      requests:
+        nvidia.com/gpu: 1
+      limits:
+        nvidia.com/gpu: 1
+    securityContext:
+        privileged: true
