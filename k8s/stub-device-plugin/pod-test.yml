@@ -12,8 +12,8 @@ spec:
     command: ["sleep", "3000"]
     resources:
       requests:
-        dummy.device.com/device: 1
+        resource.name/1: 1
       limits:
-        dummy.device.com/device: 1
+        resource.name/1: 1
     securityContext:
         privileged: true
